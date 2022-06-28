@@ -1,12 +1,13 @@
 import React from 'react'
+import { Text } from 'react-native'
 
 interface Props {
-  navigation: any
+  navigation?: Boolean
 }
 
-const HomeScreen:React.FC<Props> = ({navigation}) => {
+const HomeScreen:React.FC<Props> =({navigation}) => {
   return (
-    <div>HomeScreen</div>
+    <Text>Start Screen</Text>
   )
 }
 
