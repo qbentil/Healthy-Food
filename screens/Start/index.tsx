@@ -1,14 +1,18 @@
+import { Text, View } from 'react-native'
+
 import React from 'react'
+import tw from 'twrnc'
 
 interface Props {
-  navigation: any
+  navigation?: Boolean
 }
 
-const StartScreen:React.FC<Props> = ({navigation}) => {
+const StartScreen:React.FC<Props> =({navigation}) => {
   return (
-    <div>StartScreen</div>
+    <View style = {tw`flex flex-1 items-center justify-center`}>
+      <Text>Start Screen</Text>
+    </View>
   )
 }
-
 
 export default StartScreen
