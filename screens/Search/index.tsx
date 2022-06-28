@@ -1,12 +1,15 @@
 import React from 'react'
+import { Text } from 'react-native'
 
-interface Props{
-    navigation: any
+interface Props {
+  navigation?: Boolean
 }
-const SearchScreen:React.FC<Props> = ({navigation}) => {
+
+const SearchScreen:React.FC<Props> =({navigation}) => {
   return (
-    <div>SearchScreen</div>
+    <Text>Start Screen</Text>
   )
 }
+
 
 export default SearchScreen
