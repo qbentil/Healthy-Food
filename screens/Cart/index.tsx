@@ -1,11 +1,13 @@
 import React from 'react'
+import { Text } from 'react-native'
 
 interface Props {
-  navigation: any
+  navigation?: Boolean
 }
-const CartScreen:React.FC<Props> = ({navigation}) => {
+
+const CartScreen:React.FC<Props> =({navigation}) => {
   return (
-    <div>CartScreen</div>
+    <Text>Start Screen</Text>
   )
 }
 
