@@ -7,7 +7,7 @@ interface Props {
 
 const HomeScreen:React.FC<Props> =({navigation}) => {
   return (
-    <Text>Start Screen</Text>
+    <Text>Home Screen</Text>
   )
 }
 
