@@ -1,4 +1,4 @@
-import BottomTabs from './components/bottomtabs';
+import { BottomTabs } from './components';
 import {NavigationContainer} from '@react-navigation/native';
 
 export default function App() {
