@@ -1,5 +1,8 @@
+import { SafeAreaView, Text } from 'react-native'
+
+import { Header } from '../../components'
 import React from 'react'
-import { Text } from 'react-native'
+import tw from 'twrnc'
 
 interface Props {
   navigation?: Boolean
@@ -7,7 +10,9 @@ interface Props {
 
 const HomeScreen:React.FC<Props> =({navigation}) => {
   return (
-    <Text>Home Screen</Text>
+   <SafeAreaView style={tw`bg-[#FFB087]`}>
+    <Header />
+   </SafeAreaView>
   )
 }
 
