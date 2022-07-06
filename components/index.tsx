@@ -1,2 +1,2 @@
-export {default as BottomTabs} from './bottomtabs';
-export {default as Header} from './header';
+// export {default as Tabs} from './bottomtabs';
+// export {default as Header} from './header';
