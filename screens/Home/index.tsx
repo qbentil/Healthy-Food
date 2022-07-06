@@ -1,19 +1,32 @@
-import { SafeAreaView, Text } from 'react-native'
+import {
+  Keyboard,
+  SafeAreaView,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+} from "react-native";
 
-import { Header } from '../../components'
-import React from 'react'
-import tw from 'twrnc'
+import Header from "../../components/header";
+import React from "react";
+import Searchbar from "../../components/searchbar";
+import tw from "twrnc";
 
+// FFB087
 interface Props {
-  navigation?: Boolean
+  navigation?: Boolean;
 }
 
-const HomeScreen:React.FC<Props> =({navigation}) => {
+const HomeScreen: React.FC<Props> = ({ navigation }) => {
   return (
-   <SafeAreaView style={tw`bg-[#FFB087]`}>
-    <Header />
-   </SafeAreaView>
-  )
-}
+    <TouchableWithoutFeedback accessible = {false} onPress={Keyboard.dismiss}>
+      <SafeAreaView style={tw`bg-[#eee] h-full w-full`}>
+        <View style={tw`px-5`}>
+          <Header />
+          <Searchbar />
+        </View>
+      </SafeAreaView>
+    </TouchableWithoutFeedback>
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
