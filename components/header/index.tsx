@@ -24,11 +24,6 @@ const Header = () => {
     </View> 
   )
 }
-
-const styles = StyleSheet.create({
-    Custom: {
-        paddingTop: StatusBar.currentHeight,
-    }
-})
+  
 
 export default Header
