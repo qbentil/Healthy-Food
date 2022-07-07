@@ -6,17 +6,19 @@ import {
     TextInput,
     View,
 } from "react-native";
+import { useEffect, useState } from "react";
 
 import { AntDesign } from "@expo/vector-icons";
 import { FilterIcon } from "../../assets";
 import tw from "twrnc";
-import { useState } from "react";
+import { useStateValue } from "../../context/StateProvider";
 
 const Searchbar = () => {
   const [query, setQuery] = useState("");
+
   return (
     <View
-      style={tw`my-2 mt-4 w-full h-12 bg-[#fff] mx-auto rounded-full flex items-center justify-between flex-row px-2`}
+      style={tw`my-2 mt-4 w-full h-12 bg-[#fff] mx-auto rounded-2xl flex items-center justify-between flex-row px-3`}
     >
       <AntDesign name="search1" style={tw`text-lg text-[#40484E] mr-1`} />
       <KeyboardAvoidingView
@@ -26,7 +28,7 @@ const Searchbar = () => {
         <TextInput
           style={tw`text-lg text-[#40484E] leading-5  my-auto`}
           placeholder="What will you eat?"
-          placeholderTextColor="#999"
+          placeholderTextColor={"#999"}
           onChangeText={(text) => setQuery(text)}
           value={query}
         />
