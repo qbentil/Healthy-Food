@@ -1,11 +1,11 @@
 import {
   Keyboard,
   SafeAreaView,
-  Text,
   TouchableWithoutFeedback,
   View,
 } from "react-native";
 
+import Categories from "../../components/categories";
 import Header from "../../components/header";
 import React from "react";
 import Searchbar from "../../components/searchbar";
@@ -23,6 +23,7 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
         <View style={tw`px-5`}>
           <Header />
           <Searchbar />
+          <Categories />
         </View>
       </SafeAreaView>
     </TouchableWithoutFeedback>
