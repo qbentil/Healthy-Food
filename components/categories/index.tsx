@@ -8,6 +8,10 @@ const Categories = () => {
   return (
     <ScrollView style={tw`flex flex-col`} horizontal>
       <CategoryItem />
+      <CategoryItem />
+      <CategoryItem />
+      <CategoryItem />
+      <CategoryItem />
     </ScrollView>
   )
 }
