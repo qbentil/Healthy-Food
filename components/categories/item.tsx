@@ -3,8 +3,9 @@ import { Image, Text, View } from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import React from 'react'
 import tw from 'twrnc'
+import { FoodCategory } from '../../types'
 
-const   CategoryItem = () => {
+const   CategoryItem = ({category}:{category:FoodCategory}) => {
   return (
     <View style={tw`flex items-center justify-center mx-2`}>
         <View style={tw`w-18 h-20 bg-white rounded-lg flex items-center justify-center`}>
