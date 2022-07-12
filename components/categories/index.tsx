@@ -1,20 +1,21 @@
-import { FlatList, ScrollView, Text, View } from 'react-native'
+import { ScrollView, View } from "react-native";
 
-import CategoryItem from './item'
+import CategoryItem from "./item";
 import Items from '../../utils/categories'
-import tw from 'twrnc'
+import tw from "twrnc";
 
 const Categories = () => {
   return (
-    <ScrollView style={tw`flex flex-col`} horizontal>
-      <FlatList
-        data={Items}
-        scrollEnabled={false}
-        renderItem={({ item }) => <CategoryItem category={item} />}
-        // keyExtractor={(item) => item.id}
-      />
-    </ScrollView>
-  )
-}
+    <View style={tw`w-full py-1`}>
+      <ScrollView horizontal scrollEnabled >
+      {
+        Items.map((item, index) => (
+          <CategoryItem key={index} category={item} />
+        ))
+      }
+      </ScrollView>
+    </View>
+  );
+};
 
-export default Categories
+export default Categories;
