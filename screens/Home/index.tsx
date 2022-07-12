@@ -15,7 +15,7 @@ import tw from "twrnc";
 
 const HomeScreen = (navigation:any) => {
   return (
-    <TouchableWithoutFeedback accessible = {false} onPress={Keyboard.dismiss}>
+    <TouchableWithoutFeedback accessible onPress={Keyboard.dismiss}>
       <SafeAreaView style={tw`bg-[#eee] h-full w-full`}>
         <View style={tw`px-5`}>
           <Header />
