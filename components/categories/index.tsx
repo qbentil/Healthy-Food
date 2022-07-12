@@ -6,8 +6,8 @@ import tw from "twrnc";
 
 const Categories = () => {
   return (
-    <View style={tw`w-full py-1`}>
-      <ScrollView horizontal scrollEnabled >
+    <View style={tw`py-1`}>
+      <ScrollView horizontal contentContainerStyle={{ flex: 1}} >
       {
         Items.map((item, index) => (
           <CategoryItem key={index} category={item} />

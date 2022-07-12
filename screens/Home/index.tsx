@@ -12,11 +12,8 @@ import Searchbar from "../../components/searchbar";
 import tw from "twrnc";
 
 // FFB087
-interface Props {
-  navigation?: Boolean;
-}
 
-const HomeScreen: React.FC<Props> = ({ navigation }) => {
+const HomeScreen = (navigation:any) => {
   return (
     <TouchableWithoutFeedback accessible = {false} onPress={Keyboard.dismiss}>
       <SafeAreaView style={tw`bg-[#eee] h-full w-full`}>
