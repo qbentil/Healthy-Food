@@ -7,6 +7,7 @@ import {
 
 import Categories from "../../components/categories";
 import Header from "../../components/header";
+import MenuSection from "../../components/sections/menu";
 import React from "react";
 import Searchbar from "../../components/searchbar";
 import tw from "twrnc";
@@ -15,7 +16,7 @@ import tw from "twrnc";
 
 const HomeScreen = (navigation:any) => {
   return (
-    <TouchableWithoutFeedback accessible onPress={Keyboard.dismiss}>
+    // <TouchableWithoutFeedback accessible onPress={Keyboard.dismiss}>
       <SafeAreaView style={tw`bg-[#eee] h-full w-full`}>
         <View style={tw`px-5`}>
           <Header />
@@ -23,7 +24,7 @@ const HomeScreen = (navigation:any) => {
           <Categories />
         </View>
       </SafeAreaView>
-    </TouchableWithoutFeedback>
+    // </TouchableWithoutFeedback>
   );
 };
 
