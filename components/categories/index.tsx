@@ -2,6 +2,7 @@ import { ScrollView, View } from "react-native";
 
 import CategoryItem from "./item";
 import Items from "../../utils/categories";
+import MenuSection from "../sections/menu";
 import tw from "twrnc";
 
 const Categories = () => {
@@ -12,6 +13,8 @@ const Categories = () => {
           <CategoryItem key={index} category={item} />
         ))}
       </ScrollView>
+
+      <MenuSection category = {Items[0].name} />
     </View>
   );
 };
