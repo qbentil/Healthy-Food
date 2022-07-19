@@ -18,8 +18,8 @@ const SectionHeader = ({ title, navText, navPage }: HeaderProps) => {
         </View>
       </View>
       <View style={tw`flex flex-row items-center`}>
-      <Text style={tw`text-red-600 font-bold mr-1`}>{`${navText}`}</Text>
-      <Ionicons name="chevron-forward" size={20} color="red" />
+      <Text style={tw`text-red-600 font-bold mr-1 text-[#e80013]`}>{`${navText}`}</Text>
+      <Ionicons name="chevron-forward" size={20} style={tw`text-[#e80013]`} />
       </View>
     </View>
   );
