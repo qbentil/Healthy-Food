@@ -29,8 +29,8 @@ const Categories = [
     },
     {
         id: 5,
-        name: "Icecreams",
-        urlParam: 'icecreams',
+        name: "Ice Cream",
+        urlParam: 'icecream',
         icon: <MaterialIcons name="icecream" style={tw`text-2xl text-gray-50`} />,
     },
     {
