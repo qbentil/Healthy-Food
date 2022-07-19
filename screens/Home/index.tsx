@@ -21,8 +21,8 @@ const HomeScreen = (navigation:any) => {
         <View style={tw`px-5`}>
           <Header />
           <Searchbar />
-          <Categories />
         </View>
+        <Categories />
       </SafeAreaView>
     // </TouchableWithoutFeedback>
   );
