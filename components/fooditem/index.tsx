@@ -1,8 +1,15 @@
-import { View, Text, Image } from 'react-native'
+import { Friedrice, Icecream } from '../../assets'
+import { Image, Text, View } from 'react-native'
+
+import { FoodItemType } from '../../types'
 import React from 'react'
 import tw from 'twrnc'
-import { Friedrice, Icecream } from '../../assets'
-const FoodItem = () => {
+
+interface Props {
+  item: FoodItemType
+}
+
+const FoodItem = ({item}:Props) => {
   return (
     <View style={tw`px-2`}>
       <View style={tw`h-64 bg-white w-38 rounded-xl relative flex items-center mt-8 px-3`}>
@@ -10,8 +17,8 @@ const FoodItem = () => {
             <Image source={Friedrice} style = {tw`w-[90%] h-[90%] mr-1`} />
         </View>
         <View style={tw`absolute top-30 flex items-center py-2`}>
-          <Text style={tw`text-black font-bold text-base my-2`}>Food Name</Text>
-          <Text style={tw`text-gray-800  text-sm mb-2`}>Item description</Text>
+          <Text style={tw`text-black font-bold text-base my-2`}>{item.name}</Text>
+          <Text style={tw`text-gray-800  text-sm mb-2`}>{item.description}</Text>
           <View style={tw`flex flex-row items-center`}>
             <Text style={tw`text-[#e80013] font-bold text-xl`}>81</Text>
             <Text style={tw`text-black font-bold text-[12px] mx-1`}>Calories</Text>
