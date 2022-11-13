@@ -5,7 +5,7 @@ import tw from "./lib/tw"
 
 export default function App() {
   return (
-    <View style={[tw`bg-primary`, styles.container]}>
+    <View style={[tw`bg-primary-dark`, styles.container]}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
