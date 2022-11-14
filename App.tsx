@@ -1,13 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+import Onboard from './onboarding';
 import { StatusBar } from 'expo-status-bar';
-import tw from "./lib/tw"
 
 export default function App() {
   return (
-    <View style={[tw`bg-primary-dark`, styles.container]}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.container}>
+      <Onboard />
     </View>
   );
 }
