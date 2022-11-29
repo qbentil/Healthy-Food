@@ -4,12 +4,11 @@ import {
   Text,
   View,
   useWindowDimensions,
-  SafeAreaView,
 } from "react-native";
 
-import { OnboardItem } from "../types";
+import { OnboardItem } from "../../types";
 import React from "react";
-import tw from "../lib/tw";
+import tw from "../../lib/tw";
 
 interface OnboardItemProps {
   data: OnboardItem;
@@ -19,7 +18,7 @@ const Item = ({ data }: OnboardItemProps) => {
   const { title, desc, image } = data;
   const { width } = useWindowDimensions();
   return (
-    <View style={[tw`flex justify-center relative w-full h-screen`]}>
+    <View style={[tw`flex justify-center relative w-full h-full`]}>
       <View style={[tw`h-[60%]`, { width }]}>
         <Image
           source={image}
