@@ -3,7 +3,11 @@ import Onboarding from 'react-native-onboarding-swiper';
 import {onboard} from '../../utils/slides';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-const OboardingScreen = ({ navigation }: any) => {
+import { ParamListBase, useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+const OboardingScreen = () => {
+    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>()
+
     const DotComponent = ({ selected }: { selected: boolean }) => {
         return (
             <View style={tw`w-4 h-4 flex items-center justify-center rounded-full p-2
