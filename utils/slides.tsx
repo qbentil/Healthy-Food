@@ -1,27 +1,30 @@
+import { Image } from "react-native";
+import tw from "../lib/tw";
+
 const slides = [
   {
-    id: "1",
+    backgroundColor: "#fff",
     title: "Get discounts on all products",
-    desc: "Save money on all products in our store",
-    image: require("../assets/images/splash-1.png"),
+    subtitle: "Save money on all products in our store",
+    image: <Image source={require("../assets/images/splash-1.png")} style={tw`w-84 h-84 rounded-full object-contain`} />,
   },
   {
-    id: "2",
+    backgroundColor: "#fff",
     title: "Buy premium quality fruits",
-    desc: "We sell only the best quality fruits",
-    image: require("../assets/images/splash-2.png"),
+    subtitle: "We sell only the best quality fruits",
+    image: <Image source={require("../assets/images/splash-2.png")} style={tw`w-84 h-84 rounded-full object-contain`} />,
   },
   {
-    id: "3",
+    backgroundColor: "#fff",
     title: "Buy Qualiity Diary Products",
-    desc: "We sell only the best quality Diary Products",
-    image: require("../assets/images/splash-3.png"),
+    subtitle: "We sell only the best quality Diary Products",
+    image: <Image source={require("../assets/images/splash-3.png")} style={tw`w-84 h-84 rounded-full object-contain`} />,
   },
   {
-    id: "4",
+    backgroundColor: "#fff",
     title: "Buy Qualiity Diary Products",
-    desc: "We sell only the best quality Diary Products",
-    image: require("../assets/images/splash-4.png"),
+    subtitle: "We sell only the best quality Diary Products",
+    image: <Image source={require("../assets/images/splash-4.png")} style={tw`w-84 h-84 rounded-full object-contain`} />,
   },
 ];
 
