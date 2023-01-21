@@ -96,7 +96,8 @@ $ npm install
 # Run the project
 $ npm start
 
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize and open in the browser on the port: 19002. Scan the QR code with the Expo app on your phone to run the app.
+
 ```
 
 <!-- ## :memo: License ##
