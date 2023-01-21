@@ -46,13 +46,26 @@
 
 ## :dart: About ##
 
-Describe your project
+Healthy Food is a mobile application that allows users to search for healthy recipes, fruits and vegetables. It also allows users order for fresh fruits and vegetables from the comfort of their homes.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: User Authentication;\
+:heavy_check_mark: Order for fresh fruits and vegetables;\
+:heavy_check_mark: Search for healthy recipes;\
+:heavy_check_mark: Search for fruits and vegetables;\
+:heavy_check_mark: Add fruits and vegetables to cart;\
+:heavy_check_mark: Add recipes to cart;\
+:heavy_check_mark: View cart;\
+:heavy_check_mark: View order history;\
+:heavy_check_mark: View profile;\
+:heavy_check_mark: Edit profile;\
+:heavy_check_mark: View notifications;\
+:heavy_check_mark: View recipes;\
+:heavy_check_mark: View fruits and vegetables;\
+:heavy_check_mark: View recipe details;\
+:heavy_check_mark: View fruit and vegetable details;\
+
 
 ## :rocket: Technologies ##
 
