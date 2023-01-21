@@ -11,7 +11,8 @@ module.exports = {
           active: '#0C4284',
           'bg-a': '#F4F5F9',
           'bg-b': '#F5F5F5',
-          "text":"#868889",
+          "dark":"#868889",
+          "grey":"#DADCE0",
           "link":"#1A0DAB",
           "border":"#EBEBEB",
           
