@@ -1,6 +1,6 @@
 import tw from '../../lib/tw'
 import Onboarding from 'react-native-onboarding-swiper';
-import {onboard} from '../../utils/slides';
+import { onboard } from '../../utils/slides';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { ParamListBase, useNavigation } from '@react-navigation/native';
@@ -47,8 +47,8 @@ const OboardingScreen = () => {
         <Onboarding
             pages={onboard}
             nextLabel={'Next'}
-            onSkip={() => navigation.navigate('HomeScreen')}
-            onDone={() => navigation.navigate('HomeScreen')}
+            onSkip={() => navigation.replace('WelcomeScreen')}
+            onDone={() => navigation.replace('WelcomeScreen')}
             skipLabel={'Skip'}
             DotComponent={DotComponent}
             bottomBarHighlight={false}
