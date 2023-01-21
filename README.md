@@ -1,5 +1,6 @@
 <div align="center" id="top"> 
-  <img src="./assets/UI.jpg" alt="Healthy Food" />
+  <img src="./assets/UI.JPG" alt="Healthy Food" />
+
 
   &#xa0;
 
