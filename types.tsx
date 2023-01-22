@@ -4,3 +4,10 @@ export type OnboardItem = {
     desc: string,
     image: any
 }
+
+export type Category = {
+    id: string;
+    title: string;
+    icon: any;
+    color: string;
+}
