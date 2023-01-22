@@ -6,8 +6,13 @@ import { EvilIcons } from '@expo/vector-icons';
 import Toggle from '../Toggle';
 import Button from '../Button';
 import Input from '../Input';
+import { ParamListBase, useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 const LoginForm = () => {
+    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>()
     const [toggleValue, setToggleValue] = useState<boolean>(false);
+    const [showPassword, setShowPassword] = useState<boolean>(false);
+    
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     return (
@@ -18,7 +23,16 @@ const LoginForm = () => {
             </View>
             <View style={tw`flex flex-row items-center bg-white py-2 px-3 rounded-lg mb-2`}>
                 <EvilIcons name="lock" style={tw`text-3xl text-dark`} />
-                <Input placeholder='Password' keyboardType='default' value={password} style={`ml-2`} returnKeyType='done' returnKeyLabel='done' secureTextEntry onChange={setPassword} />
+                <Input
+                    placeholder='Password'
+                    hasPassword
+                    keyboardType='default'
+                    value={password} style={`ml-2`}
+                    returnKeyType='done'
+                    returnKeyLabel='done'
+                    onChange={setPassword}
+                    showPassword={showPassword}
+                    setShowPassword={setShowPassword} />
             </View>
 
             <View style={tw`flex flex-row justify-between items-center px-5 my-2 mb-5`}>
@@ -43,6 +57,7 @@ const LoginForm = () => {
                 text='Login'
                 variant='primary'
                 style={`mb-5`}
+                onPress={() => navigation.navigate('HomeScreen')}
             />
         </View>
     )
