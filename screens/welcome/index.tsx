@@ -26,7 +26,7 @@ const WelcomeScreen = ({ navigation }: any) => {
                     text="Continue with Google"
                     variant="secondary"
                     style={`mb-3`}
-                    onPress={() => navigation.navigation("SignupScreen")}
+                    onPress={() => navigation.navigate("SignupScreen")}
                 />
                 <Button
                     icon={<FontAwesome5 name="user-circle" style={tw`text-2xl text-white`} />}

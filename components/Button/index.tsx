@@ -12,6 +12,7 @@ interface ButtonProps {
 const Button = ({ variant = 'default', showIcon, icon, onPress, text, style }: ButtonProps) => {
     return (
         <TouchableOpacity
+            onPress={onPress}
             activeOpacity={0.8}
             style={tw`py-3 px-4 flex flex-row items-center  rounded-md shadow
             ${variant === 'primary' ? 'bg-primary' :

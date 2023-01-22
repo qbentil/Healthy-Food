@@ -14,9 +14,9 @@ const SignupScreen = ({ navigation }: any) => {
                         variant='dark'
                         style={`h-24`}
                     />
-                    <Image source={require('../../assets/images/login.png')} style={tw`absolute`} />
-                    <View style={tw`absolute bottom-0 left-0 w-full h-1/2 bg-bg-b rounded-t-3xl py-3 px-3`}>
-                        <View style={tw`mb-10`}>
+                    <Image source={require('../../assets/images/signup.png')} style={tw`absolute`} />
+                    <View style={tw`absolute bottom-0 left-0 w-full h-1/2 bg-bg-b rounded-t-3xl py-2 px-3`}>
+                        <View style={tw`mb-8`}>
                             <Text style={tw`text-2xl font-bold mt-3`}>Create account</Text>
                             <Text style={tw`text-sm text-dark mt-2`}>
                                 Quickly create account
