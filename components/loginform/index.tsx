@@ -50,14 +50,14 @@ const LoginForm = () => {
                 <TouchableOpacity style={tw`flex flex-row items-center justify-center`}
                     activeOpacity={0.7}
                 >
-                    <Text style={tw`text-link-hover text-base`}>Forgot pass</Text>
+                    <Text style={tw`text-link-hover text-base`}>Forgot password</Text>
                 </TouchableOpacity>
             </View>
             <Button
                 text='Login'
                 variant='primary'
                 style={`mb-5`}
-                onPress={() => navigation.navigate('HomeScreen')}
+                onPress={() => navigation.replace('HomeScreen')}
             />
         </View>
     )
