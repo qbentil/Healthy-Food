@@ -2,7 +2,7 @@ import { View, Text, FlatList } from 'react-native'
 import React from 'react'
 import SectionHeader from '../sectionheader'
 import tw from '../../lib/tw'
-import Item from './items'
+import Item from './item'
 import { CategoriesData } from '../../utils'
 const Categories = () => {
   return (
