@@ -11,3 +11,15 @@ export type Category = {
     icon: any;
     color: string;
 }
+
+export type Product = {
+    id:     string; 
+    title:  string;
+    price:  number;
+    image:  any;
+    rating?: number;
+    category?: string;
+    quantity: number;
+    description?: string;
+    unit?: string;
+}
