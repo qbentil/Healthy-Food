@@ -1,6 +1,8 @@
+import { HomeScreen, LoginScreen, OnboardingScreen, SignupScreen, SplashScreen, WelcomeScreen } from './screens';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen, LoginScreen, OnboardingScreen , SplashScreen,SignupScreen, WelcomeScreen} from './screens';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -13,8 +15,6 @@ export default function App() {
         <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown: false,}} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false,}} />
         <Stack.Screen name="SignupScreen" component={SignupScreen} options={{headerShown: false,}} />
-
-
       </Stack.Navigator>
     </NavigationContainer>
   );
