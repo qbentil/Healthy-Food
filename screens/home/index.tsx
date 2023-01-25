@@ -5,7 +5,7 @@ import tw from '../../lib/tw'
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={[tw`bg-white w-[full] h-full flex items-center justify-center`, { flex: 1 }]}>
+    <SafeAreaView style={[tw`bg-bg-a w-full h-full flex items-center justify-center`, { flex: 1 }]}>
       <Searchbar />
       <ScrollView style={[tw`w-full`, { flex: 1 }]}
         contentContainerStyle={[tw`flex items-center justify-center`]}
