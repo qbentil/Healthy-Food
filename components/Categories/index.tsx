@@ -1,12 +1,14 @@
-import { View, Text, FlatList } from 'react-native'
+import { FlatList, Text, View } from 'react-native'
+
+import { CategoriesData } from '../../utils'
+import Item from './item'
 import React from 'react'
 import SectionHeader from '../sectionheader'
 import tw from '../../lib/tw'
-import Item from './item'
-import { CategoriesData } from '../../utils'
+
 const Categories = () => {
   return (
-    <View style={tw`w-[95%]`}>
+    <View style={tw`w-full bg-white px-2`}>
       <SectionHeader title="Categories" />
       {/* horizontal flatlist of categories*/}
       <View style={tw`my-2`}>
