@@ -112,15 +112,15 @@ export const ProductsData = [
         description: "Fresh Broccoli from the farm",
         unit: "1.0 kg"
     },
-    {
-        id: "7",
-        title: "Organic Lemon",
-        price: 2.22,
-        image: require("../assets/images/products/lemon.png"),
-        rating: 4.5,
-        category: "2",
-        quantity: 1,
-        description: "Fresh Lemon from the farm",
-        unit: "1.5 lbs"
-    }
+    // {
+    //     id: "7",
+    //     title: "Organic Lemon",
+    //     price: 2.22,
+    //     image: require("../assets/images/products/lemon.png"),
+    //     rating: 4.5,
+    //     category: "2",
+    //     quantity: 1,
+    //     description: "Fresh Lemon from the farm",
+    //     unit: "1.5 lbs"
+    // }
 ] as Product[]
