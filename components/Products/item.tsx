@@ -11,7 +11,7 @@ interface Props {
 const Item = ({ data }: Props) => {
     const { title, price, image, rating, category, quantity, description, unit } = data
     return (
-        <View style={tw`bg-white pt-2 rounded w-1/2 my-2 mx-1 flex items-center justify-center relative`}>
+        <View style={tw`bg-gray-50 pt-2 rounded w-1/2 my-2 mx-1 flex items-center justify-center relative`}>
             <View style={tw`w-20 h-20 rounded-full bg-[#E6F2EA]  flex items-center justify-center`}>
             </View>
             <Image source={image} style={tw`absolute top-5`} />
